@@ -7,7 +7,7 @@ import Typed from 'typed.js';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  MyName: string = 'Akhlaque Ahmad';
+  myName: string = 'Akhlaque Ahmad';
   stream:string = 'Developer';
   constructor() {}
 
