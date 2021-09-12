@@ -28,11 +28,11 @@ export class HeaderComponent implements OnInit {
       icon: 'bx-book-content',
       link: '#portfolio',
     },
-    {
-      name: 'Testimonials',
-      icon: 'bxs-badge-check',
-      link: '#references',
-    },
+    // {
+    //   name: 'Testimonials',
+    //   icon: 'bxs-badge-check',
+    //   link: '#references',
+    // },
     {
       name: 'Contact Me',
       icon: 'bx-envelope',
