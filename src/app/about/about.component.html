@@ -1,6 +1,6 @@
 <section id="about">
     <div class="container">
-        <h2><strong>About</strong></h2>
+        <h2><strong>{{about}}</strong></h2>
         <span class="bar-title mb-5"></span>
         <div class="row">
             <div class="col-lg-4 col-md-12" data-aos="fade-right" >
@@ -9,33 +9,32 @@
                     <img src="assets/images/profile.jpg" alt="photo de profil" class="img-fluid">
                 </picture>
                <div class="d-flex justify-content-center">
-                    <a  class="btn-social-media" href="https://www.linkedin.com/in/iam-atts/" rel="tooltip" target="_blank"  title="follow me Linkedin">
+                    <a  class="btn-social-media" href=" {{myInfo.socialMedia.linkedin}} " rel="tooltip" target="_blank"  title="follow me Linkedin">
                         <i  class="fa fa-linkedin fa-lg "></i>
                     </a>
-                    <a class="btn-social-media btn-default btn-round btn-lg btn-icon" href="https://github.com/Akhlaquea01" rel="tooltip" target="_blank" title="follow me GitHub" >
+                    <a class="btn-social-media btn-default btn-round btn-lg btn-icon" href="{{myInfo.socialMedia.github}}" rel="tooltip" target="_blank" title="follow me GitHub" >
                         <i  class="fa fa-github fa-lg "></i></a>
                 </div>
 
 
             </div>
             <div class="col-lg-8  col-md-12 pt-4 pt-lg-0" data-aos="fade-left">
-                <h3>Web &amp; Mobile Application Developer.</h3>
+                <h3>{{myInfo.job.jobTitle}}</h3>
                 <p class="font-italic">
-                  Interested in new technologies and working methods. I like to come up with ideas that improve business processes.
-                    <br>Passionate about <b>Front-End</b> Development.
+                  {{myInfo.job.jobDescription}}
                 </p>
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <ul>
                             <li>
-                                <fa-icon [icon]="mapMarker"></fa-icon><strong> Chandwara,Muzaffarpur</strong>
+                                <fa-icon [icon]="mapMarker"></fa-icon><strong> {{myInfo.contact.address.locality}},{{myInfo.contact.address.city}}</strong>
                             </li>
                             <li>
-                                <fa-icon [icon]="building"></fa-icon><strong> Bihar, India</strong>
+                            <fa-icon [icon]="building"></fa-icon><strong> {{myInfo.contact.address.state}}, {{myInfo.contact.address.country}}</strong>
                             </li>
                             <li>
-                                <fa-icon [icon]="email"></fa-icon><strong><a href="mailto:akhlaquea01@gmail.com">
-                                        akhlaquea01@gmail.com</a></strong>
+                                <fa-icon [icon]="email"></fa-icon><strong><a href="mailto:{{myInfo.contact.email}}">
+                                  {{myInfo.contact.email}}</a></strong>
                             </li>
 
                         </ul>
@@ -43,13 +42,13 @@
                     <div class="col-lg-6 col-md-6">
                         <ul>
                             <li>
-                                <fa-icon [icon]="birthday"></fa-icon><strong> 22 Years</strong>
+                                <fa-icon [icon]="birthday"></fa-icon><strong> {{myAge}} Years</strong>
                             </li>
                             <li>
-                                <fa-icon [icon]="badge"></fa-icon><strong> B.Tech</strong>
+                                <fa-icon [icon]="badge"></fa-icon><strong> {{myInfo.education[2].graduation.degree}} </strong>
                             </li>
                             <li>
-                                <fa-icon [icon]="home"></fa-icon><strong> Computer Science &amp; Engineering </strong>
+                                <fa-icon [icon]="home"></fa-icon><strong> {{myInfo.education[2].graduation.branch}} </strong>
                             </li>
                         </ul>
                     </div>
