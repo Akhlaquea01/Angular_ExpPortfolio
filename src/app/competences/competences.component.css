@@ -42,7 +42,7 @@
 .skillData, .skillData-Wrapper {
   line-height: 0.1 0.7em;
   height: 12px;
-  
+
   float: left;
   color: white;
   text-align: center; }
@@ -51,13 +51,16 @@
   width: 90%;
 }
 .very-good{
-  width: 80%;
+  width: 70%;
 }
 .good{
-  width: 70%;
+  width: 60%;
 }
 .average{
   width: 50%;
+}
+.poor{
+  width: 30%;
 }
  .bg-rust {
     background-color: #149ddd;
