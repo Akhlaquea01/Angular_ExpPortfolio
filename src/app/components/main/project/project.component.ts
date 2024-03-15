@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
+  isDropdownHidden: boolean = true;
 
+  toggleDropdown() {
+    this.isDropdownHidden = !this.isDropdownHidden;
+  }
+
+  hideDropdown() {
+    this.isDropdownHidden = true;
+  }
 }

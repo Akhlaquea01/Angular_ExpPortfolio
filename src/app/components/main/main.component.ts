@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectComponent } from './project/project.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { EducationComponent } from './education/education.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogsComponent } from './blogs/blogs.component';
@@ -18,6 +19,7 @@ import { BlogsComponent } from './blogs/blogs.component';
     TestimonialsComponent,
     ContactComponent,
     BlogsComponent,
+    EducationComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
