@@ -1,0 +1,39 @@
+<h2 class="text-3xl font-bold text-center mb-8">Testimonials</h2>
+
+<div class="flex items-center justify-center">
+    <div class="wrapper-for-arrows relative w-full max-w-2xl rounded-xl shadow-lg overflow-hidden">
+        <div class="review-wrap flex flex-col items-center justify-center p-8">
+            <!-- Placeholder image with rounded corners -->
+            <div class="w-32 h-32 mb-4 bg-gray-600 rounded-full overflow-hidden"
+                [style.backgroundImage]="'url(' + testimonials[currentTestimonialIndex].image + ')'"
+                style="background-size: cover; background-position: center;">
+            </div>
+            <!-- Testimonial name -->
+            <div class="text-lg font-bold mb-2 w-64 h-6 text-center mb-2">{{ testimonials[currentTestimonialIndex].name
+                }}</div>
+            <!-- Testimonial profession -->
+            <div class="text-sm text-blue-500 mb-2 w-32 h-4"></div>
+            <!-- Testimonial message -->
+            <div class="text-sm text-gray-600 w-11/12 md:w-2/3 h-20 text-center">{{
+                testimonials[currentTestimonialIndex].message }}</div>
+        </div>
+        <!-- Left arrow -->
+        <div class="left-arrow-wrap arrow-wrap absolute top-1/2 left-4 transform -translate-y-1/2 cursor-pointer"
+            (click)="previousTestimonial()">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-blue-500 transition duration-300 hover:scale-125" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </div>
+        <!-- Right arrow -->
+        <div class="right-arrow-wrap arrow-wrap absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
+            (click)="nextTestimonial()">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-blue-500 transition duration-300 hover:scale-125" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </div>
+    </div>
+</div>
