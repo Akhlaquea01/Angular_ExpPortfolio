@@ -2,7 +2,8 @@
 
 <div class="flex items-center justify-between">
     <!-- Left arrow icon -->
-    <button class="flex-none p-3 bg-white shadow-md rounded-full" (click)="scrollLeft()">
+    <button class="flex-none p-3 bg-white shadow-md rounded-full outline-none focus:outline-none"
+        (click)="scrollLeft()">
         <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
@@ -12,19 +13,22 @@
     <!-- Projects -->
     <div class="flex gap-4 py-5 px-3 overflow-x-hidden max-w-full" #scrollContainer>
         <!-- Project cards -->
-        <div *ngFor="let x of [1,2,3,4,5,6]" class="flex-none w-72 max-w-xs rounded-lg overflow-hidden shadow-md">
+        <div *ngFor="let repo of repos" class="flex-none w-72 max-w-xs rounded-lg overflow-hidden shadow-md">
             <img class="w-full" src="https://via.placeholder.com/300x200" alt="Project Image">
             <div class="p-4">
-                <h3 class="font-semibold text-lg mb-2">Project {{x}}</h3>
-                <p class="text-gray-700">Description of Project {{x}}</p>
-                <a href="#" class="block mt-4 text-blue-500 hover:underline">GitHub</a>
+                <h3 class="font-semibold text-lg mb-2">Project {{repo.name}}</h3>
+                <p class="text-gray-700 mb-4"> {{repo.description ? repo.description : 'No description Available'}}</p>
+                <div class="flex justify-between">
+                    <a [href]="repo.svn_url" target="_blank" class="button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">GitHub</a>
+                    <a href="#" class="button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" disabled>View</a>
+                </div>
             </div>
         </div>
-        
     </div>
 
     <!-- Right arrow icon -->
-    <button class="flex-none p-3 bg-white shadow-md rounded-full" (click)="scrollRight()">
+    <button class="flex-none p-3 bg-white shadow-md rounded-full outline-none focus:outline-none"
+        (click)="scrollRight()">
         <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
