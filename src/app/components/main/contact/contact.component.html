@@ -49,7 +49,7 @@
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                         for="grid-first-name">First Name</label>
-                    <input [(ngModel)]="subject"
+                    <input [(ngModel)]="subject" [ngModelOptions]="{standalone: true}"
                         class="appearance-none bg-transparent border-b border-indigo-500 w-full text-gray-700 mr-3 p-4 leading-tight focus:outline-none focus:bg-gray-200"
                         type="text" placeholder="Akhlaque" aria-label="Full name">
                     <!-- <p class="text-red-500 text-xs italic mt-1">Please fill out this field.</p> -->
@@ -78,7 +78,7 @@
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                         for="grid-message">Your
                         Message</label>
-                    <textarea rows="4" [(ngModel)]="body"
+                    <textarea rows="4" [(ngModel)]="body" [ngModelOptions]="{standalone: true}"
                         class="appearance-none bg-transparent border-b border-indigo-500 w-full text-gray-700 mr-3 p-4 focus:bg-gray-200 leading-tight focus:outline-none"
                         type="email" placeholder="Your message here" aria-label="Full name"></textarea>
                 </div>
@@ -90,8 +90,7 @@
                         </label>
                     </div>
                     <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
-                        <a [href]="url"
-                            class="text-white">Send Email</a>
+                        <a [href]="url" class="text-white">Send Email</a>
                     </button>
 
                 </div>
