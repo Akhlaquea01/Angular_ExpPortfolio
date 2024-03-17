@@ -97,7 +97,7 @@ export class ExperienceComponent {
     {
       "company_name": "Karvy",
       active: false,
-      "logo": "assets/images/logo/html.svg",
+      "logo": "assets/images/logo/karvy.png",
       "positions": [
         {
           "title": "Customer Support Officer",
