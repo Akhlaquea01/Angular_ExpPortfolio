@@ -9,6 +9,16 @@ import { Component } from '@angular/core';
   styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent {
+  
+
+  toggleResponsibilities(position: any): void {
+    position.showAllResponsibilities = !position.showAllResponsibilities;
+  }
+
+  toggleAccomplishments(position: any): void {
+    position.showAllAccomplishments = !position.showAllAccomplishments;
+  }
+
   timeline = [
     {
       "company_name": "Zycus",
@@ -21,6 +31,8 @@ export class ExperienceComponent {
           "tenure": "May 2022 - Present",
           "duration": "1 yr 11 mos",
           "location": "Bengaluru, Karnataka, India · Remote",
+          showAllAccomplishments: false,
+          showAllResponsibilities:false,
           "responsibilities": [
             "Develop and maintain codebase for source-to-pay procurement software solutions.",
             "Utilize Angular Material, JSON, Bootstrap, and Bitbucket for efficient and visually appealing front-end development.",
@@ -43,6 +55,8 @@ export class ExperienceComponent {
           "tenure": "Jul 2021 - Apr 2022",
           "duration": "10 mos",
           "location": "Bangalore Urban, Karnataka, India · Hybrid",
+          showAllAccomplishments: false,
+          showAllResponsibilities: false,
           "responsibilities": [
             "Developed and maintained codebase for source-to-pay procurement software solutions.",
             "Utilized Angular and SASS to create engaging and responsive user interfaces.",
@@ -63,6 +77,8 @@ export class ExperienceComponent {
           "tenure": "Feb 2021 - Jun 2021",
           "duration": "5 mos",
           "location": "Bangalore Urban, Karnataka, India · Remote",
+          showAllAccomplishments: false,
+          showAllResponsibilities: false,
           "responsibilities": [
             "Assisted senior developers in developing and maintaining a codebase for web applications.",
             "Participated in code reviews, identified areas for improvement, and implemented suggested changes.",
@@ -78,7 +94,26 @@ export class ExperienceComponent {
         }
       ]
     },
-    
+    {
+      "company_name": "Karvy",
+      active: false,
+      "logo": "assets/images/logo/html.svg",
+      "positions": [
+        {
+          "title": "Customer Support Officer",
+          "employment_type": "Full-time",
+          "tenure": "July 2019 - August 2019",
+          "duration": "1 months",
+          "location": "Noida Area, India",
+          showAllAccomplishments: false,
+          showAllResponsibilities: false,
+          "responsibilities": [
+          ],
+          "accomplishments": [
+          ]
+        }
+      ]
+    }
   ];
 
 }
