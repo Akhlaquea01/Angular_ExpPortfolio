@@ -3,9 +3,6 @@
 <ng-container *ngFor="let company of timeline; let i = index">
     <div class="mb-10">
         <div class="flex items-center mb-4 relative">
-            <!-- Line marker -->
-            <div *ngIf="i !== 0" class="absolute top-0 left-1/2 transform -translate-y-full"
-                style="width: 2px; height: calc(50% + 8px); background-color: #718096;"></div>
             <!-- Company logo -->
             <img class=" h-8 mr-3" [src]="company.logo" alt="Company Logo">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ company.company_name }}</h3>
@@ -21,8 +18,12 @@
                     </div>
 
                     <div class="pl-6">
-                        <p class="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">{{
-                            position.responsibilities[0] }}</p>
+                        <ul class="list-disc list-inside">
+                            <li *ngFor="let responsibilitie  of position.responsibilities">
+                                <span class="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">{{
+                                    responsibilitie }}</span>
+                            </li>
+                        </ul>
                         <ul class="list-disc list-inside">
                             <li *ngFor="let accomplishment of position.accomplishments">{{ accomplishment }}</li>
                         </ul>
