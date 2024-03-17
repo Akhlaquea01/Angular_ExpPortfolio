@@ -1,20 +1,24 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
-  isDropdownHidden: boolean = true;
+  @ViewChild('scrollContainer')
+  scrollContainerRef!: ElementRef;
 
-  toggleDropdown() {
-    this.isDropdownHidden = !this.isDropdownHidden;
+  constructor() { }
+
+  scrollLeft() {
+    this.scrollContainerRef.nativeElement.scrollLeft -= 600; // Adjust this value as needed
   }
 
-  hideDropdown() {
-    this.isDropdownHidden = true;
+  scrollRight() {
+    this.scrollContainerRef.nativeElement.scrollLeft += 600; // Adjust this value as needed
   }
 }
