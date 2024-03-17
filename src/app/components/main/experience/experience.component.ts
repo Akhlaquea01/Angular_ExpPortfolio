@@ -12,7 +12,8 @@ export class ExperienceComponent {
   timeline = [
     {
       "company_name": "Zycus",
-      "logo": "zycus-logo.png",
+      active: true,
+      "logo": "assets/images/logo/zycus.png",
       "positions": [
         {
           "title": "Software Engineer",
@@ -77,23 +78,7 @@ export class ExperienceComponent {
         }
       ]
     },
-    {
-      "company_name": "Karvy",
-      "logo": "karvy-logo.png",
-      "positions": [
-        {
-          "title": "Customer Support Officer",
-          "employment_type": "Full-time",
-          "tenure": "July 2019 - August 2019",
-          "duration": "1 months",
-          "location": "Noida Area, India",
-          "responsibilities": [
-          ],
-          "accomplishments": [
-          ]
-        }
-      ]
-    }
+    
   ];
 
 }
