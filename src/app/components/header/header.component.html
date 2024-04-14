@@ -20,13 +20,14 @@
         <nav [ngClass]="{'hidden': !isMenuOpen, 'mt-16': isMenuOpen}"
             class="absolute top-0 right-0 sm:relative sm:flex sm:items-center">
             <ul class="flex flex-col sm:flex-row sm:space-x-8 items-center">
-                <li><a href="#" class="hover:text-gray-700">Skills</a></li>
-                <li><a href="#" class="hover:text-gray-700">Experience</a></li>
-                <li><a href="#" class="hover:text-gray-700">Projects</a></li>
-                <li><a href="#" class="hover:text-gray-700">Testimonials</a></li>
-                <li><a href="#" class="hover:text-gray-700">Education</a></li>
-                <!-- <li><a href="#" class="hover:text-gray-700">Blogs</a></li> -->
-                <li><a href="#" class="hover:text-gray-700">Contact</a></li>
+                <li><a (click)="scrollToSection('home')" class="hover:text-gray-700">Home</a></li>
+                <li><a (click)="scrollToSection('skills')" class="hover:text-gray-700">Skills</a></li>
+                <li><a (click)="scrollToSection('experience')" class="hover:text-gray-700">Experience</a></li>
+                <li><a (click)="scrollToSection('projects')" class="hover:text-gray-700">Projects</a></li>
+                <li><a (click)="scrollToSection('testimonials')" class="hover:text-gray-700">Testimonials</a></li>
+                <li><a (click)="scrollToSection('education')" class="hover:text-gray-700">Education</a></li>
+                <!-- <li><a (click)="scrollToSection('blogs')" class="hover:text-gray-700">Blogs</a></li> -->
+                <li><a (click)="scrollToSection('contact')" class="hover:text-gray-700">Contact</a></li>
             </ul>
         </nav>
     </div>
