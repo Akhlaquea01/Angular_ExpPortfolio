@@ -19,15 +19,22 @@
                 <div class="h-32">
                     <h3 class="font-semibold text-lg mb-2 truncate" [title]="repo.name">{{ repo.name }}</h3>
                     <p class="text-gray-700 mb-4 overflow-hidden max-h-[5rem] leading-tight"
-                        [title]="repo?.description??'No description available'">{{ repo.description ? repo.description : 'No description available'
+                        [title]="repo?.description??'No description available'">{{ repo.description ? repo.description :
+                        'No description available'
                         }}
                     </p>
                 </div>
                 <div class="flex justify-between items-center">
                     <a [href]="repo.svn_url" target="_blank"
                         class="button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">GitHub</a>
-                    <button class="button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
-                        disabled>View</button>
+                    <ng-container *ngIf="repo.homepage">
+                        <a [href]="repo.homepage" target="_blank"
+                            class="button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">View</a>
+                    </ng-container>
+                    <ng-container *ngIf="!repo.homepage">
+                        <button class="button bg-green-500 text-white font-bold py-2 px-4 rounded"
+                            disabled>View</button>
+                    </ng-container>
                 </div>
             </div>
         </div>
