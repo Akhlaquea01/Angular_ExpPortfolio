@@ -1,21 +1,33 @@
-<header class="p-4">
-    <div class="container xl:max-w-screen-xl mx-auto">
-        <div class="flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="assets\images\logo\atts.png" alt="Logo" class="h-10 rounded-full shadow-2xl mr-2 bg-black">
-                <h1 class="text-lg font-semibold">Akhlaque</h1>
-            </div>
-            <nav>
-                <ul class="flex space-x-4 hidden sm:flex">
-                    <li><a href="#" class="hover:text-gray-700">Skills</a></li>
-                    <li><a href="#" class="hover:text-gray-700">Experience</a></li>
-                    <li><a href="#" class="hover:text-gray-700">Projects</a></li>
-                    <li><a href="#" class="hover:text-gray-700">Testimonials</a></li>
-                    <li><a href="#" class="hover:text-gray-700">Education</a></li>
-                    <!-- <li><a href="#" class="hover:text-gray-700">Blogs</a></li> -->
-                    <li><a href="#" class="hover:text-gray-700">Contact</a></li>
-                </ul>
-            </nav>
+<header class="p-4 fixed top-0 left-0 w-full z-10 bg-white shadow-lg">
+    <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="assets\images\logo\atts.png" alt="Logo" class="h-10 rounded-full shadow-2xl mr-2 bg-black">
+            <h1 class="text-lg font-semibold mr-4">Akhlaque</h1>
         </div>
+        <button (click)="toggleMenu()" class="block sm:hidden">
+            <svg id="menu-icon" class="cursor-pointer inline-block" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24">
+                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg>
+
+            <svg id="close-icon" class="hidden cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24">
+                <path
+                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                </path>
+            </svg>
+        </button>
+        <nav [ngClass]="{'hidden': !isMenuOpen, 'mt-16': isMenuOpen}" class="sm:relative sm:flex sm:items-center">
+            <ul class="flex flex-col sm:flex-row sm:space-x-8 items-center">
+                <li><a (click)="scrollToSection('home')" class="hover:text-gray-700">Home</a></li>
+                <li><a (click)="scrollToSection('skills')" class="hover:text-gray-700">Skills</a></li>
+                <li><a (click)="scrollToSection('experience')" class="hover:text-gray-700">Experience</a></li>
+                <li><a (click)="scrollToSection('projects')" class="hover:text-gray-700">Projects</a></li>
+                <li><a (click)="scrollToSection('testimonials')" class="hover:text-gray-700">Testimonials</a></li>
+                <li><a (click)="scrollToSection('education')" class="hover:text-gray-700">Education</a></li>
+                <!-- <li><a (click)="scrollToSection('blogs')" class="hover:text-gray-700">Blogs</a></li> -->
+                <li><a (click)="scrollToSection('contact')" class="hover:text-gray-700">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
