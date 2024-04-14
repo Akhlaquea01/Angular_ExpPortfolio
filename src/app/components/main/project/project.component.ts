@@ -24,11 +24,20 @@ export class ProjectComponent {
       .catch(error => console.error('Error fetching profile:', error));
   }
 
-  scrollLeft() {
-    this.scrollContainerRef.nativeElement.scrollLeft -= 600; // Adjust this value as needed
+
+  scrollLeft(): void {
+    const cardGallery = (this.scrollContainerRef.nativeElement as HTMLElement);
+    cardGallery.scrollBy({
+      left: -200, // Adjust scroll distance as needed
+      behavior: 'smooth'
+    });
   }
 
-  scrollRight() {
-    this.scrollContainerRef.nativeElement.scrollLeft += 600; // Adjust this value as needed
+  scrollRight(): void {
+    const cardGallery = (this.scrollContainerRef.nativeElement as HTMLElement);
+    cardGallery.scrollBy({
+      left: 200, // Adjust scroll distance as needed
+      behavior: 'smooth'
+    });
   }
 }
