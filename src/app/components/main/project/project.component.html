@@ -1,8 +1,8 @@
 <h2 class="text-3xl font-bold text-center mb-8">My Projects</h2>
 
-<div class="flex items-center justify-between bg-[#ECF0F3] rounded-lg shadow-2xl">
+<div class="flex items-center justify-between  ">
     <!-- Left arrow icon -->
-    <button class="flex-none p-3 bg-white shadow-md rounded-full outline-none focus:outline-none"
+    <button class="flex-none p-3 bg-[#e6e7ee] left-arrow  shadow-md rounded-full outline-none focus:outline-none"
         (click)="scrollLeft()">
         <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +13,8 @@
     <!-- Projects -->
     <div class="flex gap-4 py-5 px-3 overflow-x-hidden max-w-full" #scrollContainer>
         <!-- Project cards -->
-        <div *ngFor="let repo of repos" class="flex-none w-72 max-w-xs rounded-lg overflow-hidden shadow-md bg-white">
+        <div *ngFor="let repo of repos"
+            class="flex-none w-72 max-w-xs rounded-lg overflow-hidden shadow-md bg-[#e6e7ee] shadow-soft">
             <img class="w-full h-48 object-cover" src="https://via.placeholder.com/300x200" alt="Project Image">
             <div class="p-4">
                 <div class="h-32">
@@ -26,13 +27,13 @@
                 </div>
                 <div class="flex justify-between items-center">
                     <a [href]="repo.svn_url" target="_blank"
-                        class="button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">GitHub</a>
+                        class="button view  py-2 px-4 rounded">GitHub</a>
                     <ng-container *ngIf="repo.homepage">
                         <a [href]="repo.homepage" target="_blank"
-                            class="button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">View</a>
+                            class="button view  py-2 px-4 rounded">View</a>
                     </ng-container>
                     <ng-container *ngIf="!repo.homepage">
-                        <button class="button bg-green-500 text-white font-bold py-2 px-4 rounded"
+                        <button class="button view  py-2 px-4 rounded"
                             disabled>View</button>
                     </ng-container>
                 </div>
@@ -42,7 +43,7 @@
 
 
     <!-- Right arrow icon -->
-    <button class="flex-none p-3 bg-white shadow-md rounded-full outline-none focus:outline-none"
+    <button class=" left-arrow flex-none p-3 bg-[#e6e7ee]  shadow-md rounded-full outline-none focus:outline-none"
         (click)="scrollRight()">
         <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg">
