@@ -1,49 +1,66 @@
 <h2 class="text-3xl font-bold text-center mt-6 mb-5">Contact</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-        <div class="md:col-span-4 bg-gray-100 p-10 rounded-lg shadow-lg">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4" >
+        <div class="bg-[#e6e7ee] md:col-span-4  p-10 rounded-lg shadow-lg   shadow-soft">
             <p class="mt-4 text-sm leading-7 font-regular uppercase">Contact</p>
             <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight">Get In <span
-                    class="text-indigo-600">Touch</span></h3>
+                    class="txt-clr">Touch</span></h3>
 
             <div class="flex items-center mt-5">
-                <div class="w-8 h-8 mb-2 bg-cover bg-center"
+                <div class="w-8 h-8 mb-2 bg-cover bg-center icon"
                     [style.backgroundImage]="'url(assets/images/logo/address.svg)'"></div>
                 <span class="text-sm  ml-2">Muzaffarpur, Bihar, India 842001</span>
             </div>
             <div class="flex items-center mt-5">
-                <div class="w-8 h-8 mb-2 bg-cover bg-center"
-                    [style.backgroundImage]="'url(assets/images/logo/cell-phone.svg)'"></div>
+                <!-- <div class="w-8 h-8 mb-2 bg-cover bg-center "
+                    [style.backgroundImage]="'url(assets/images/logo/cell-phone.svg)'"></div> -->
+                    <div class="add-icon">
+
+                        <i class="fa fa-2x fa-mobile-phone" style="color: #4e846b;"></i>
+                    </div>
                 <span class="text-sm  ml-2">8797247279</span>
             </div>
             <div class="flex items-center mt-5">
-                <div class="w-8 h-8 mb-2 bg-cover bg-center"
-                    [style.backgroundImage]="'url(assets/images/logo/email.svg)'"></div>
+                <!-- <div class="w-8 h-8 mb-2 bg-cover bg-center"
+                    [style.backgroundImage]="'url(assets/images/logo/email.svg)'"></div> -->
+                 <div class="add-icon">
+
+                     <i class="fa fa-solid gmail fa-envelope"></i>
+                 </div>   
                 <span class="text-sm ml-2">akhlaquea01gmail.com</span>
             </div>
-            <div class="flex justify-center mt-10">
+            <div class="flex  mt-16">
                 <a href="https://www.linkedin.com/in/iam-atts/" target="_blank" rel="noopener noreferrer" class="mr-4">
-                    <div class="w-8 h-8 bg-cover bg-center"
-                        [style.backgroundImage]="'url(assets/images/logo/linkedin.svg)'"></div>
+                    <div class="bg-ico" id="linkedin">
+                        <i class="fa fa-linkedin social linkedin fa-2x"></i>
+                    </div>
                 </a>
                 <a href="https://www.instagram.com/iam_atts_/" target="_blank" rel="noopener noreferrer" class="mr-4">
-                    <div class="w-8 h-8 bg-cover bg-center"
-                        [style.backgroundImage]="'url(assets/images/logo/instagram.svg)'"></div>
+                    <!-- <div class="w-8 h-8 bg-cover bg-center"
+                        [style.backgroundImage]="'url(assets/images/logo/instagram.svg)'"></div> -->
+                        <div class="bg-ico" id="instagram">
+                            <i class="fa fa-instagram social instagram fa-2x"></i>
+                        </div>
                 </a>
+            
+                    
+                
                 <a href="https://github.com/Akhlaquea01" target="_blank" rel="noopener noreferrer" class="mr-4">
-                    <div class="w-8 h-8 bg-cover bg-center"
-                        [style.backgroundImage]="'url(assets/images/logo/github.svg)'"></div>
+                    <!-- <div class="w-8 h-8 bg-cover bg-center"
+                        [style.backgroundImage]="'url(assets/images/logo/github.svg)'"></div> -->
+                        <div class="bg-ico" id="github">
+                            <i class="fa fa-github social github fa-2x"></i>
+                        </div>
                 </a>
                 <a href="https://www.youtube.com/channel/UCnSxC87V29fH64re0B8N4wA" target="_blank"
                     rel="noopener noreferrer">
-                    <div class="w-8 h-8 bg-cover bg-center"
-                        [style.backgroundImage]="'url(assets/images/logo/youtube.svg)'"></div>
+                    <div class="bg-ico" id="youtube"><i class="fa fa-youtube social  youtube fa-2x"></i></div>
                 </a>
             </div>
         </div>
 
         <!-- Form Starts Here -->
-        <form class="md:col-span-8 p-10 bg-gray-100 rounded-lg shadow-lg">
+        <form class="md:col-span-8 p-10 rounded-lg shadow-lg bg-[#e6e7ee] shadow-soft">
             <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -72,7 +89,7 @@
                         type="email" placeholder="akhlaquea01@gmail.com" aria-label="Full name">
                 </div>
             </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="flex flex-wrap -mx-3 mb-6 bg-[#e6e7ee]">
                 <div class="w-full px-3">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                         for="grid-message">Your
@@ -87,11 +104,10 @@
                             <input class="mr-2 leading-tight" type="checkbox">
                             <span class="text-sm">Send me your updates!</span>
                         </label>
-                    </div>
-                    <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
-                        <a [href]="url" class="text-white">Send</a>
-                    </button>
-
+                    </div>                    
+                        <button class="btn-rfe  py-2 px-4 rounded ">
+                            <a [href]="url" class="text-gray-700">Send</a>
+                        </button>
                 </div>
             </div>
         </form>

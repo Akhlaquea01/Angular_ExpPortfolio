@@ -1,37 +1,36 @@
-<h2 class="text-3xl font-bold text-center mb-8 mt-6">Testimonials</h2>
-
-    <div class="wrapper-for-arrows relative w-full rounded-xl shadow-lg overflow-hidden bg-[#ECF0F3]">
-        <div class="review-wrap flex flex-col items-center justify-center p-8">
-            <!-- Placeholder image with rounded corners -->
-            <div class="w-32 h-32 mb-4 bg-gray-600 rounded-full overflow-hidden"
-                [style.backgroundImage]="'url(' + testimonials[currentTestimonialIndex].image + ')'"
-                style="background-size: cover; background-position: center;">
+<h2 class="text-3xl font-bold text-center mb-8 mt-8">Testimonials</h2>
+<div class="wrapper">
+    <p-carousel  [value]="testimonials" [numVisible]="3" [numScroll]="3" [circular]="false"
+        [responsiveOptions]="responsiveOptions" >
+        <ng-template let-product pTemplate="item">
+            <div class="border-1 surface-border border-round m-2 p-3 shadow-soft">
+                <div class="mb-3 image-item">                    
+                    <div class="img-area">
+                        <div class="inner-area">
+                            <img [src]="product.image" [alt]="product.name" class="rounded-circle w-full border-round" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 font-medium cust-grn">
+                    {{ product.name }}
+                </div>
+                <div class="mb-3 font-medium">
+                    {{ product.company }}
+                </div>
+                <div class="mb-3 font-medium">
+                    {{ product.message }}
+                </div>
+                
             </div>
-            <!-- Testimonial name -->
-            <div class="text-lg font-bold mb-2 w-64 h-6 text-center mb-2">{{ testimonials[currentTestimonialIndex].name
-                }}</div>
-            <!-- Testimonial profession -->
-            <div class="text-sm text-blue-500 mb-2 w-32 h-4"></div>
-            <!-- Testimonial message -->
-            <div class="text-sm text-gray-600 w-11/12 md:w-2/3 h-20 text-center">{{
-                testimonials[currentTestimonialIndex].message }}</div>
+            
+        </ng-template>
+        <div class="flex justify-content-between align-items-center">
+            <p-button icon="pi pi-heart" severity="secondary" [outlined]="true"></p-button>
+            <p-button icon="pi pi-shopping-cart" styleClass="ml-2"></p-button>
         </div>
-        <!-- Left arrow -->
-        <div class="left-arrow-wrap arrow-wrap absolute top-1/2 left-4 transform -translate-y-1/2 cursor-pointer"
-            (click)="previousTestimonial()">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 text-blue-500 transition duration-300 hover:scale-125" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-        </div>
-        <!-- Right arrow -->
-        <div class="right-arrow-wrap arrow-wrap absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-            (click)="nextTestimonial()">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 text-blue-500 transition duration-300 hover:scale-125" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-        </div>
-    </div>
+    </p-carousel>
+</div>
+
+
+
+
