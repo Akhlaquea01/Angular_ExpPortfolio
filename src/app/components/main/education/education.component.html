@@ -1,14 +1,14 @@
 <h2 class="text-3xl font-bold text-center mb-8 mt-6">Education</h2>
 <div class="bg-[#e6e7ee] [box-shadow:6px_6px_12px_#b8b9be,_-6px_-6px_12px_#fff!important] rounded-lg shadow-2xl">
 
-    <div *ngFor="let item of educationItems" class="relative pl-8 sm:pl-32 py-6 group ml-5">
+    <div *ngFor="let item of educationItems" class="relative pl-8 sm:pl-32 py-14 group lg:ml-5 sm:ml-[0.5rem]">
         <!-- Purple label -->
         <div class="font-caveat font-medium text-2xl text-[#4e846b] mb-1 sm:mb-0 ">{{ item.label }}</div>
         <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
         <div
-            class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-[#4e846b] after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+            class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute  sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute sm:after:left-0  after:w-2 after:h-2 after:bg-[#4e846b] after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5 lg:after:top-[56px] after:top-[13px] before:top-[16px] lg:before:top-[62px] after:left-[0.8rem] before:left-[0.8rem]">
             <time 
-                class="text-[.75rem] block absolute text-[#4e846b] border-[.0625rem] border-[solid] border-[#d1d9e6] px-[10px] py-[5px] text-center whitespace-nowrap [box-shadow:inset_2px_2px_5px_#b8b9be,_inset_-3px_-3px_7px_#fff] rounded-[.55rem] sm:absolute  left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0   rounded-full">{{
+                class="text-[.75rem] block absolute text-[#4e846b] border-[.0625rem] border-[solid] border-[#d1d9e6] px-[10px] py-[5px] text-center whitespace-nowrap [box-shadow:inset_2px_2px_5px_#b8b9be,_inset_-3px_-3px_7px_#fff] rounded-[.55rem] sm:absolute top-[14px] lg:top-[56px] translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 left-[25px] mb-3 sm:mb-0 rounded-full lg:left-0">{{
                 item.date }}</time>
             <div class="text-xl font-bold text-[#818284]">{{ item.title }}</div>
         </div>
