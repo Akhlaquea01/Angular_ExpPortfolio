@@ -7,11 +7,10 @@ import { TagModule } from 'primeng/tag';
 
 
 @Component({
-  selector: 'app-testimonials',
-  standalone: true,
-  imports: [ CommonModule, FormsModule, CarouselModule, ButtonModule, TagModule ],
-  templateUrl: './testimonials.component.html',
-  styleUrl: './testimonials.component.scss'
+    selector: 'app-testimonials',
+    imports: [CommonModule, FormsModule, CarouselModule, ButtonModule, TagModule],
+    templateUrl: './testimonials.component.html',
+    styleUrl: './testimonials.component.scss'
 })
 export class TestimonialsComponent implements OnInit {
   @ViewChild('scrollContainer')

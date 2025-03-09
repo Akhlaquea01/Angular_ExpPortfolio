@@ -9,20 +9,19 @@ import { ContactComponent } from './contact/contact.component';
 import { BlogsComponent } from './blogs/blogs.component';
 
 @Component({
-  selector: 'app-main',
-  standalone: true,
-  imports: [
-    HomeComponent,
-    ProjectComponent,
-    SkillsComponent,
-    ExperienceComponent,
-    TestimonialsComponent,
-    ContactComponent,
-    BlogsComponent,
-    EducationComponent
-  ],
-  templateUrl: './main.component.html',
-  styleUrl: './main.component.scss'
+    selector: 'app-main',
+    imports: [
+        HomeComponent,
+        ProjectComponent,
+        SkillsComponent,
+        ExperienceComponent,
+        TestimonialsComponent,
+        ContactComponent,
+        BlogsComponent,
+        EducationComponent
+    ],
+    templateUrl: './main.component.html',
+    styleUrl: './main.component.scss'
 })
 export class MainComponent {
 
