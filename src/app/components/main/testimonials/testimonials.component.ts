@@ -6,8 +6,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-testimonials',
   imports: [CommonModule, FormsModule],
-  templateUrl: './testimonials.component.html',
-  styleUrl: './testimonials.component.scss'
+  templateUrl: './testimonials.component.html'
 })
 export class TestimonialsComponent implements OnInit {
   @Input() visibleSlides: number = 3;

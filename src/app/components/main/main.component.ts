@@ -6,7 +6,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
-import { BlogsComponent } from './blogs/blogs.component';
+// import { BlogsComponent } from './blogs/blogs.component';
 
 @Component({
     selector: 'app-main',
@@ -17,11 +17,10 @@ import { BlogsComponent } from './blogs/blogs.component';
         ExperienceComponent,
         TestimonialsComponent,
         ContactComponent,
-        BlogsComponent,
+        // BlogsComponent,
         EducationComponent
     ],
-    templateUrl: './main.component.html',
-    styleUrl: './main.component.scss'
+    templateUrl: './main.component.html'
 })
 export class MainComponent {
 

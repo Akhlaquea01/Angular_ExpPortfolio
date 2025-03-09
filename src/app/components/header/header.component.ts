@@ -4,8 +4,7 @@ import { Component, ElementRef } from '@angular/core';
 @Component({
     selector: 'app-header',
     imports: [CommonModule],
-    templateUrl: './header.component.html',
-    styleUrl: './header.component.scss'
+    templateUrl: './header.component.html'
 })
 export class HeaderComponent {
   constructor(private elementRef: ElementRef) { }
