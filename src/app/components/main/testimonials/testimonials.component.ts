@@ -1,23 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CarouselModule } from 'primeng/carousel';
-import { ButtonModule } from 'primeng/button';
-import { TagModule } from 'primeng/tag';
 
 
 @Component({
-    selector: 'app-testimonials',
-    imports: [CommonModule, FormsModule, CarouselModule, ButtonModule, TagModule],
-    templateUrl: './testimonials.component.html',
-    styleUrl: './testimonials.component.scss'
+  selector: 'app-testimonials',
+  imports: [CommonModule, FormsModule],
+  templateUrl: './testimonials.component.html',
+  styleUrl: './testimonials.component.scss'
 })
 export class TestimonialsComponent implements OnInit {
   @ViewChild('scrollContainer')
   scrollContainerRef!: ElementRef;
   responsiveOptions: any[] | undefined;
-  
-  
+
+
   currentTestimonialIndex = 0;
   testimonials!: { name: string; company: string; message: string; image: string; }[];
 
@@ -80,9 +77,9 @@ export class TestimonialsComponent implements OnInit {
     ];
   }
   ngOnInit(): void {
-   
 
-  
+
+
   }
 
   nextTestimonial() {
@@ -108,6 +105,6 @@ export class TestimonialsComponent implements OnInit {
       behavior: 'smooth'
     });
   }
-  
+
 
 }
