@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 
@@ -10,9 +10,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './testimonials.component.scss'
 })
 export class TestimonialsComponent implements OnInit {
-  @ViewChild('scrollContainer')
-  scrollContainerRef!: ElementRef;
-  responsiveOptions: any[] | undefined;
+  @Input() visibleSlides: number = 3;
+  currentSlide: number = 0;
 
 
   currentTestimonialIndex = 0;
@@ -57,54 +56,25 @@ export class TestimonialsComponent implements OnInit {
         image: 'assets/images/testimonials/Ashab.png'
       }
     ];
-
-    this.responsiveOptions = [
-      {
-        breakpoint: '1024px',
-        numVisible: 3,
-        numScroll: 3
-      },
-      {
-        breakpoint: '768px',
-        numVisible: 2,
-        numScroll: 2
-      },
-      {
-        breakpoint: '560px',
-        numVisible: 1,
-        numScroll: 1
-      }
-    ];
   }
   ngOnInit(): void {
 
 
 
   }
-
-  nextTestimonial() {
-    this.currentTestimonialIndex = this.currentTestimonialIndex + 1;
+  prevSlide() {
+    if (this.currentSlide > 0) {
+      this.currentSlide--;
+    }
   }
 
-  previousTestimonial() {
-    this.currentTestimonialIndex = this.currentTestimonialIndex - 1;
+  nextSlide() {
+    if (
+      this.currentSlide <
+      this.testimonials.length - this.visibleSlides
+    ) {
+      this.currentSlide++;
+    }
   }
-
-  scrollLeft(): void {
-    const cardGallery = (this.scrollContainerRef.nativeElement as HTMLElement);
-    cardGallery.scrollBy({
-      left: -200, // Adjust scroll distance as needed
-      behavior: 'smooth'
-    });
-  }
-
-  scrollRight(): void {
-    const cardGallery = (this.scrollContainerRef.nativeElement as HTMLElement);
-    cardGallery.scrollBy({
-      left: 200, // Adjust scroll distance as needed
-      behavior: 'smooth'
-    });
-  }
-
 
 }
