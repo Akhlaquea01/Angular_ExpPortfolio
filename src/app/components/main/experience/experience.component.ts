@@ -33,16 +33,12 @@ export class ExperienceComponent {
           "showAllAccomplishments": false,
           "showAllResponsibilities": false,
           "responsibilities": [
-            "Develop and maintain the codebase for source-to-pay procurement software solutions, ensuring efficiency and scalability.",
-            "Utilize Angular Material, JSON, Bootstrap, and Bitbucket to create visually appealing and responsive front-end designs.",
-            "Design engaging user interfaces using Angular, JavaScript, and SASS.",
-            "Conduct thorough code reviews and implement improvements using SonarQube analysis to enhance code quality.",
-            "Leverage GitHub and Jira for streamlined project management and version control.",
-            "Integrate RESTful APIs using Swagger, ensuring seamless data exchange between services.",
-            "Optimize UI builds, upgrade packages, and fix memory leak issues to improve performance.",
+            "Develop and maintain source-to-pay procurement software, ensuring efficiency and scalability.",
+            "Created functionality and user experience for multiple Merlin Agentic Platforms.",
+            "Optimize UI performance by upgrading packages and resolving memory leaks.",
+            "Implement AWS services like S3 for file management and SQS for messaging.",
             "Increase code coverage and refactor legacy code for better maintainability.",
-            "Implement cloud-based solutions such as AWS S3 for file management and AWS SQS for messaging services.",
-            "Contribute to multiple Merlin Agentic Platforms, enhancing functionality and user experience."
+            "Conduct code reviews and integrate SonarQube analysis for quality improvements."
           ],
           "accomplishments": [
             "Received Monthly Goody in November 2024 for dedication and efforts.",
@@ -59,10 +55,10 @@ export class ExperienceComponent {
           "showAllAccomplishments": false,
           "showAllResponsibilities": false,
           "responsibilities": [
-            "Developed and maintained the codebase for source-to-pay procurement software solutions using Angular, JSON, Bootstrap, and Bitbucket.",
-            "Conducted code reviews and implemented improvements based on SonarQube analysis to ensure high-quality work.",
-            "Integrated RESTful APIs using Swagger for seamless data exchange and utilized GoCD for continuous integration and deployment.",
-            "Ensured adherence to best practices in HTML, CSS, and HTML5 for web development."
+            "Developed and maintained procurement software using Angular and Bootstrap.",
+            "Integrated RESTful APIs using Swagger for seamless data exchange.",
+            "Implemented CI/CD pipelines with GoCD for automated deployments.",
+            "Ensured adherence to best practices in web development and optimized UI components."
           ],
           "accomplishments": [
             "Received Individual Goody in April 2023 for consistently demonstrating a can-do attitude, resourcefulness, and delivering high-quality work within project timelines.",
@@ -78,14 +74,12 @@ export class ExperienceComponent {
           "showAllAccomplishments": false,
           "showAllResponsibilities": false,
           "responsibilities": [
-            "Developed and maintained codebase for source-to-pay procurement software solutions using Angular and SASS.",
-            "Conducted code reviews and implemented improvements based on SonarQube analysis.",
+            "Played a key role in migrating supplier-side legacy pages to the Dew Drops architecture.",
             "Collaborated with cross-functional teams using Git and Jira for efficient project management.",
-            "Integrated RESTful APIs using Swagger for seamless data exchange."
+            "Conducted code reviews and implemented improvements based on SonarQube analysis."
           ],
           "accomplishments": [
-            "Played a key role in the migration of supplier-side legacy pages to the Dew Drops architecture.",
-            "Received recognition for being a quick learner and putting in extra effort to ensure timely completion of work.",
+            "Received recognition for quick learning and extra effort in ensuring timely project completion.",
             "Participated in Zycus' two-day Hackerfest, showcasing problem-solving skills and teamwork."
           ]
         },
@@ -98,20 +92,18 @@ export class ExperienceComponent {
           "showAllAccomplishments": false,
           "showAllResponsibilities": false,
           "responsibilities": [
-            "Assisted senior developers in developing and maintaining a codebase for web applications.",
-            "Participated in code reviews, identified areas for improvement, and implemented suggested changes.",
-            "Collaborated with team members to troubleshoot and debug issues in the application.",
-            "Actively learned and applied new technologies and frameworks relevant to the project."
+            "Assisted in developing and maintaining web applications.",
+            "Participated in code reviews and implemented suggested improvements.",
+            "Actively learned and applied new technologies relevant to the project."
           ],
           "accomplishments": [
-            "Successfully contributed to the development of key features of the application.",
-            "Received positive feedback for code quality and adherence to best practices.",
-            "Demonstrated a quick learning ability and adaptability in grasping new concepts and technologies.",
+            "Successfully contributed to key features of the application.",
             "Completed Angular Developer Certification | Edureka."
           ]
         }
       ]
     }
+
 
     // {
     //   "company_name": "Karvy",
