@@ -1,17 +1,47 @@
-# Akhlaque's Portfolio
+# Akhlaque Ahmad — Portfolio
 
-This is my personal portfolio website built with Angular and Tailwind CSS. It showcases my skills, experience, projects, testimonials, education, and contact information.
+A premium, dark-first portfolio built with Angular 22 (standalone components, Signals, zoneless
+change detection, prerendered SSG), Tailwind CSS v4, GSAP/ScrollTrigger, and Spartan
+(`@spartan-ng/brain`) UI primitives.
 
-## About Me
-I'm Akhlaque Ahmad, a passionate Front-end Developer with over 3.2 years of experience in crafting dynamic web applications with a focus on Angular and Tailwind CSS. Known for delivering captivating user interfaces and providing technical leadership to enhance team productivity.
+## Updating content
 
-Outside of work, I'm an avid technology enthusiast, constantly exploring the latest advancements and innovations. I also enjoy playing mobile games, spending quality time with friends, and traveling to explore new cultures.
+Every piece of copy on the site lives in `src/content/*.ts` — profile, experience, projects,
+skills, tech stack, achievements, certifications, education, testimonials. Edit the plain
+data there; no component or template changes are needed. `src/content/blog.ts` and
+`src/content/open-source.ts` are empty stubs — fill them in and flip their `enabled` flag to
+`true` in `src/app/sections/sections.config.ts` to turn those sections on.
 
-## Contents
-- **Home**: Introduction and overview of my portfolio.
-- **Skills**: List of my technical skills.
-- **Experience**: Details of my work experience, including responsibilities and accomplishments.
-- **Projects**: Showcase of projects I've worked on.
-- **Testimonials**: Feedback from colleagues and clients.
-- **Education**: Overview of my educational background.
-- **Contact**: Ways to get in touch with me.
+To add a brand-new section: create `src/content/<name>.ts`, a component under
+`src/app/sections/<name>/`, and one entry in `sections.config.ts`. The navbar and page both
+render from that single registry.
+
+## Development
+
+```bash
+npm install
+npm start        # ng serve, http://localhost:4200
+```
+
+## Production build (prerendered/static)
+
+```bash
+npm run build
+```
+
+Output goes to `dist/portfolio/browser` — fully prerendered static HTML/CSS/JS. It can be
+hosted on any static file host (no Node server required); `dist/portfolio/server` is only
+needed if you want live SSR instead of the static build.
+
+## Tests
+
+```bash
+npm test
+```
+
+## Before deploying
+
+- `src/app/core/services/seo.ts` and `public/robots.txt` / `public/sitemap.xml` use a
+  placeholder domain (`https://akhlaque.dev`) — replace it once a real domain is chosen.
+- Run a Lighthouse audit in Chrome DevTools against the production build to confirm
+  performance/accessibility/SEO scores.

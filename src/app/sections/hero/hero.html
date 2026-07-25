@@ -1,0 +1,74 @@
+<section
+  id="hero"
+  class="relative flex min-h-[92vh] items-center overflow-hidden px-6 pb-20 pt-32 sm:px-10"
+>
+  <app-animated-background />
+
+  <div class="mx-auto grid w-full max-w-6xl gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+    <div [appReveal]="0">
+      <p
+        class="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-xs font-medium text-fg-muted"
+      >
+        <svg lucideMapPin class="h-3.5 w-3.5 text-accent"></svg>
+        {{ profile.location }}
+      </p>
+
+      <h1 class="text-4xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
+        Hi, I'm {{ profile.firstName }} —
+        <span class="text-gradient block">{{ profile.role }}</span>
+      </h1>
+
+      <p class="mt-6 max-w-xl text-lg leading-relaxed text-fg-muted">
+        {{ profile.tagline }}. {{ experience }}+ years turning complex enterprise procurement problems
+        into fast, reliable products.
+      </p>
+
+      <div class="mt-9 flex flex-wrap items-center gap-4">
+        <a appBtn="primary" btnSize="lg" appMagnetic href="#contact">
+          Get in touch
+          <svg lucideArrowRight class="h-4 w-4"></svg>
+        </a>
+        <a
+          appBtn="outline"
+          btnSize="lg"
+          appMagnetic
+          href="/resume/Akhlaque-Ahmad-Resume.pdf"
+          download
+          target="_blank"
+          rel="noopener"
+        >
+          <svg lucideDownload class="h-4 w-4"></svg>
+          Download Resume
+        </a>
+      </div>
+
+      <dl class="mt-14 grid max-w-md grid-cols-3 gap-6 border-t border-border pt-8">
+        <div>
+          <dt class="text-xs uppercase tracking-wide text-fg-subtle">Experience</dt>
+          <dd class="mt-1 font-mono text-2xl font-semibold">{{ experience }}+ yrs</dd>
+        </div>
+        <div>
+          <dt class="text-xs uppercase tracking-wide text-fg-subtle">Feature modules shipped</dt>
+          <dd class="mt-1 font-mono text-2xl font-semibold">30+</dd>
+        </div>
+        <div>
+          <dt class="text-xs uppercase tracking-wide text-fg-subtle">Employee of the Month</dt>
+          <dd class="mt-1 font-mono text-2xl font-semibold">×4</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div [appReveal]="0.2" class="relative mx-auto w-full max-w-sm">
+      <div class="surface-neo relative overflow-hidden rounded-[2rem] p-3">
+        <img
+          [ngSrc]="profile.photo"
+          width="600"
+          height="600"
+          priority
+          class="h-full w-full rounded-[1.5rem] object-cover"
+          [alt]="profile.name"
+        />
+      </div>
+    </div>
+  </div>
+</section>

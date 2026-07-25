@@ -1,0 +1,30 @@
+<section id="tech-stack" class="relative px-6 py-24 sm:px-10">
+  <div class="mx-auto max-w-6xl">
+    <p [appReveal]="0" class="text-sm font-medium uppercase tracking-widest text-accent">Tech Stack</p>
+    <h2 [appReveal]="0.05" class="mt-3 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">
+      Tools I reach for daily.
+    </h2>
+
+    <div class="mt-14 space-y-10">
+      @for (group of groups; track group.category; let i = $index) {
+        <div [appReveal]="0.05 * i">
+          <h3 class="text-xs font-semibold uppercase tracking-wide text-fg-subtle">{{ group.category }}</h3>
+          <div class="mt-4 flex flex-wrap gap-3">
+            @for (item of group.items; track item.name) {
+              <div
+                class="surface-neo group flex items-center gap-2.5 rounded-full py-2 pl-2 pr-4 transition-transform duration-300 hover:-translate-y-0.5 hover:text-accent"
+              >
+                <span
+                  class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-black/5 bg-white"
+                >
+                  <img [src]="item.icon" [alt]="item.name" loading="lazy" class="h-4 w-4 object-contain" />
+                </span>
+                <span class="text-sm font-medium text-fg">{{ item.name }}</span>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

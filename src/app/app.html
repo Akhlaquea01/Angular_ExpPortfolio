@@ -1,0 +1,11 @@
+<a href="#main-content" class="skip-link focus:skip-link-visible">Skip to content</a>
+
+<app-navbar />
+
+<main id="main-content">
+  @for (section of sections; track section.id) {
+    <ng-container *ngComponentOutlet="section.component" />
+  }
+</main>
+
+<app-footer />

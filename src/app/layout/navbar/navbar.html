@@ -1,0 +1,82 @@
+<header
+  class="fixed inset-x-0 top-0 z-50 transition-all duration-300"
+  [class.surface-glass]="isScrolled()"
+  [class.py-4]="!isScrolled()"
+  [class.py-3]="isScrolled()"
+>
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 sm:px-10" aria-label="Primary">
+    <a href="#hero" class="shrink-0 font-mono text-sm font-semibold tracking-tight">
+      {{ profile.firstName }}<span class="text-accent">.</span>
+    </a>
+
+    <!-- Collapses at `xl` (1280px), not the more usual `lg` (1024px) — at `lg` the
+         ~10 nav labels wrapped and overflowed the header. -->
+    <ul class="hidden items-center xl:flex">
+      @for (link of links; track link.id) {
+        <li>
+          <a
+            [href]="'#' + link.id"
+            class="block whitespace-nowrap rounded-lg px-2.5 py-2 text-sm font-medium text-fg-muted transition-colors hover:text-fg"
+            [class.text-fg]="activeId === link.id"
+            [class.bg-surface]="activeId === link.id"
+          >
+            {{ link.label }}
+          </a>
+        </li>
+      }
+    </ul>
+
+    <div class="flex items-center gap-2">
+      <button
+        type="button"
+        appBtn="ghost"
+        btnSize="sm"
+        class="h-10! w-10! px-0!"
+        (click)="theme.toggle()"
+        [attr.aria-label]="theme.mode() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'"
+      >
+        @if (theme.mode() === 'dark') {
+          <svg lucideSun class="h-4 w-4"></svg>
+        } @else {
+          <svg lucideMoon class="h-4 w-4"></svg>
+        }
+      </button>
+
+      <button
+        type="button"
+        appBtn="ghost"
+        btnSize="sm"
+        class="h-10! w-10! px-0! xl:hidden"
+        (click)="toggleMenu()"
+        [attr.aria-expanded]="isMenuOpen()"
+        aria-controls="mobile-menu"
+        aria-label="Toggle navigation menu"
+      >
+        @if (isMenuOpen()) {
+          <svg lucideX class="h-4 w-4"></svg>
+        } @else {
+          <svg lucideMenu class="h-4 w-4"></svg>
+        }
+      </button>
+    </div>
+  </nav>
+
+  @if (isMenuOpen()) {
+    <div id="mobile-menu" class="surface-glass mx-4 mt-3 rounded-2xl p-4 xl:hidden">
+      <ul class="flex flex-col gap-1">
+        @for (link of links; track link.id) {
+          <li>
+            <a
+              [href]="'#' + link.id"
+              (click)="closeMenu()"
+              class="block rounded-lg px-3 py-2.5 text-sm font-medium text-fg-muted hover:bg-surface hover:text-fg"
+              [class.text-fg]="activeId === link.id"
+            >
+              {{ link.label }}
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+  }
+</header>
