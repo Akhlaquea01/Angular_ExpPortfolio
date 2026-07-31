@@ -41,15 +41,14 @@ export interface ProjectEntry {
   tech: string[];
 }
 
-export interface SkillGroup {
-  category: string;
-  items: string[];
+export interface SkillItem {
+  name: string;
+  icon?: string;
 }
 
-export interface TechStackItem {
-  name: string;
-  icon: string;
+export interface SkillGroup {
   category: string;
+  items: SkillItem[];
 }
 
 export interface AchievementStat {

@@ -11,7 +11,6 @@ import { OpenSource } from './open-source/open-source';
 import { Projects } from './projects/projects';
 import { Resume } from './resume/resume';
 import { Skills } from './skills/skills';
-import { TechStack } from './tech-stack/tech-stack';
 import { Testimonials } from './testimonials/testimonials';
 
 export interface SectionConfig {
@@ -37,8 +36,7 @@ export const sections: SectionConfig[] = [
   { id: 'about', label: 'About', component: About, enabled: true, inNav: false },
   { id: 'experience', label: 'Experience', component: Experience, enabled: true },
   { id: 'projects', label: 'Projects', component: Projects, enabled: true },
-  { id: 'skills', label: 'Skills', component: Skills, enabled: true, inNav: false },
-  { id: 'tech-stack', label: 'Tech Stack', component: TechStack, enabled: true },
+  { id: 'skills', label: 'Skills', component: Skills, enabled: true },
   { id: 'achievements', label: 'Achievements', component: Achievements, enabled: true, inNav: false },
   { id: 'certifications', label: 'Certifications', component: Certifications, enabled: true, inNav: false },
   { id: 'testimonials', label: 'Testimonials', component: Testimonials, enabled: true, inNav: false },
