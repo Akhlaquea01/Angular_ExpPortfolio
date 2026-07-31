@@ -1,10 +1,11 @@
-<header
-  class="fixed inset-x-0 top-0 z-50 transition-all duration-300"
-  [class.surface-glass]="isScrolled()"
-  [class.py-4]="!isScrolled()"
-  [class.py-3]="isScrolled()"
->
-  <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 sm:px-10" aria-label="Primary">
+<header class="fixed inset-x-0 top-0 z-50 pt-4 sm:pt-6 px-4 transition-all duration-300 pointer-events-none">
+  <nav 
+    class="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-3 sm:px-8 rounded-full transition-all duration-300 pointer-events-auto"
+    [class.surface-glass]="isScrolled()"
+    [class.shadow-lg]="isScrolled()"
+    [class.bg-transparent]="!isScrolled()"
+    aria-label="Primary"
+  >
     <a href="#hero" class="shrink-0 font-mono text-sm font-semibold tracking-tight">
       {{ profile.firstName }}<span class="text-accent">.</span>
     </a>
@@ -16,9 +17,9 @@
         <li>
           <a
             [href]="'#' + link.id"
-            class="block whitespace-nowrap rounded-lg px-2.5 py-2 text-sm font-medium text-fg-muted transition-colors hover:text-fg"
-            [class.text-fg]="activeId === link.id"
-            [class.bg-surface]="activeId === link.id"
+            class="block whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 hover:text-fg"
+            [class.text-fg-muted]="activeId !== link.id"
+            [class.nav-link-active]="activeId === link.id"
           >
             {{ link.label }}
           </a>
@@ -27,6 +28,21 @@
     </ul>
 
     <div class="flex items-center gap-2">
+      <div class="hidden sm:flex items-center gap-2 border-r border-border pr-4 mr-1">
+        @for (color of themeColors; track color.id) {
+          <button
+            type="button"
+            (click)="theme.setColor(color.id)"
+            [attr.aria-label]="'Set theme color to ' + color.name"
+            class="h-3.5 w-3.5 rounded-full outline-offset-2 transition-all hover:scale-110 focus-visible:outline-2"
+            [class.scale-125]="theme.color().id === color.id"
+            [class.outline]="theme.color().id === color.id"
+            [style.backgroundColor]="theme.mode() === 'dark' ? color.dark.accent : color.light.accent"
+            [style.outlineColor]="theme.mode() === 'dark' ? color.dark.accent : color.light.accent"
+          ></button>
+        }
+      </div>
+
       <button
         type="button"
         appBtn="ghost"
@@ -62,15 +78,16 @@
   </nav>
 
   @if (isMenuOpen()) {
-    <div id="mobile-menu" class="surface-glass mx-4 mt-3 rounded-2xl p-4 xl:hidden">
+    <div id="mobile-menu" class="surface-glass mx-auto mt-3 w-full max-w-6xl rounded-2xl p-4 xl:hidden pointer-events-auto">
       <ul class="flex flex-col gap-1">
         @for (link of links; track link.id) {
           <li>
             <a
               [href]="'#' + link.id"
               (click)="closeMenu()"
-              class="block rounded-lg px-3 py-2.5 text-sm font-medium text-fg-muted hover:bg-surface hover:text-fg"
-              [class.text-fg]="activeId === link.id"
+              class="block rounded-xl px-3 py-2.5 text-sm font-medium transition-all duration-300 hover:text-fg"
+              [class.text-fg-muted]="activeId !== link.id"
+              [class.nav-link-active]="activeId === link.id"
             >
               {{ link.label }}
             </a>

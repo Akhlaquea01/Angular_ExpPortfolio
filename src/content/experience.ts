@@ -7,10 +7,32 @@ export const experience: ExperienceCompany[] = [
     active: true,
     roles: [
       {
+        title: 'Lead Engineer',
+        employmentType: 'Full-time',
+        tenure: 'Apr 2026 - Present',
+        duration: '4 mos',
+        location: 'Bengaluru, Karnataka, India · Hybrid',
+        responsibilities: [
+          'Led development and architectural decisions for ably and Agentic Systems.',
+          'Spearheaded the integration of AI-driven workflows and agent-based solutions.',
+          'Mentored team members and enforced clean code and performance optimization practices.',
+          'Collaborated with stakeholders to define requirements for intelligent enterprise software.',
+        ],
+        accomplishments: [
+          'Successfully launched new agentic capabilities and streamlined development processes.'
+        ],
+        skills: [
+          'Team Leadership',
+          'Agentic Workflows',
+          'MCP (Model Context Protocol)',
+          'Ably Realtime',
+        ],
+      },
+      {
         title: 'Senior Software Engineer',
         employmentType: 'Full-time',
-        tenure: 'Apr 2024 - Present',
-        duration: '1 yr',
+        tenure: 'Apr 2024 - Mar 2026',
+        duration: '2 yrs',
         location: 'Bengaluru, Karnataka, India · Hybrid',
         responsibilities: [
           'Develop and maintain source-to-pay procurement software, ensuring efficiency and scalability.',
@@ -26,13 +48,12 @@ export const experience: ExperienceCompany[] = [
           'Successfully completed FY24-25 Master Course - GDUS Delivery - Salesforce Training (Internal).',
         ],
         skills: [
-          'Angular',
-          'AI/Agentic Systems',
-          'AWS S3',
-          'AWS SQS',
-          'SonarQube',
+          'Angular & DewDrops',
+          'Node.js & Express BFF',
+          'Streaming AI Chat',
+          'Playwright E2E',
+          'AWS S3 & SQS',
           'Performance Optimization',
-          'Code Review',
         ],
       },
       {

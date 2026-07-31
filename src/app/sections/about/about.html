@@ -1,17 +1,16 @@
-<section id="about" class="relative px-6 py-28 sm:px-10">
+<section id="about" class="relative px-6 py-16 sm:px-10">
   <div class="mx-auto max-w-4xl">
     <p [appReveal]="0" class="text-sm font-medium uppercase tracking-widest text-accent">About</p>
     <h2 [appReveal]="0.05" class="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-      Enterprise-grade frontend architecture, shipped with care.
+      {{ aboutContent.heading }}
     </h2>
     <p [appReveal]="0.1" class="mt-6 text-lg leading-relaxed text-fg-muted">{{ profile.summary }}</p>
     <p [appReveal]="0.15" class="mt-4 text-lg leading-relaxed text-fg-muted">{{ profile.hobby }}</p>
 
     <div [appReveal]="0.2" class="mt-10 flex flex-wrap gap-3">
-      <span appBadge>Angular</span>
-      <span appBadge>Node.js BFF</span>
-      <span appBadge>Agentic AI</span>
-      <span appBadge>Enterprise SaaS</span>
+      @for (tag of aboutContent.skillTags; track tag) {
+        <span appBadge>{{ tag }}</span>
+      }
     </div>
   </div>
 </section>

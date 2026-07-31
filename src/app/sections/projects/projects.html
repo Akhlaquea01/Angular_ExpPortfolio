@@ -1,4 +1,4 @@
-<section id="projects" class="relative px-6 py-28 sm:px-10">
+<section id="projects" class="relative px-6 py-16 sm:px-10">
   <div class="mx-auto max-w-6xl">
     <div class="flex flex-wrap items-end justify-between gap-6">
       <div>
@@ -81,7 +81,7 @@
         }
 
         @if (state() === 'ready') {
-          <div #repoScroller class="no-scrollbar mt-6 flex gap-4 overflow-x-auto scroll-smooth pb-2">
+          <div #repoScroller class="no-scrollbar -mx-6 mt-2 flex gap-4 overflow-x-auto scroll-smooth px-6 py-6 sm:-mx-10 sm:px-10">
             @for (repo of repos(); track repo.name) {
               <a
                 appCard

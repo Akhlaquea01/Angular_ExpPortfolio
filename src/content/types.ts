@@ -96,3 +96,18 @@ export interface OpenSourceItem {
   description: string;
   url: string;
 }
+
+export interface HeroStat {
+  label: string;
+  value: string | number;
+  dynamicValue?: 'experienceYears' | 'totalRoles';
+  suffix: string;
+}
+
+export interface HeroContent {
+  greeting: string;
+  descriptionSuffix: string;
+  primaryButtonText: string;
+  secondaryButtonText: string;
+  stats: HeroStat[];
+}

@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-@import 'tw-animate-css';
 
 /* ---------------------------------------------------------------------- *
  * Design tokens — dark-first, swapped to light via `.light` on <html>.   *
@@ -153,6 +152,12 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+@utility nav-link-active {
+  background-color: var(--accent);
+  color: var(--accent-fg);
+  box-shadow: 0 4px 12px -2px var(--accent);
 }
 
 @utility skip-link {

@@ -14,18 +14,17 @@
       </p>
 
       <h1 class="text-4xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
-        Hi, I'm {{ profile.firstName }} —
+        {{ content.greeting }} {{ profile.firstName }} —
         <span class="text-gradient block">{{ profile.role }}</span>
       </h1>
 
       <p class="mt-6 max-w-xl text-lg leading-relaxed text-fg-muted">
-        {{ profile.tagline }}. {{ experience }}+ years turning complex enterprise procurement problems
-        into fast, reliable products.
+        {{ profile.tagline }}. {{ expYears }}+ {{ content.descriptionSuffix }}
       </p>
 
       <div class="mt-9 flex flex-wrap items-center gap-4">
         <a appBtn="primary" btnSize="lg" appMagnetic href="#contact">
-          Get in touch
+          {{ content.primaryButtonText }}
           <svg lucideArrowRight class="h-4 w-4"></svg>
         </a>
         <a
@@ -38,23 +37,17 @@
           rel="noopener"
         >
           <svg lucideDownload class="h-4 w-4"></svg>
-          Download Resume
+          {{ content.secondaryButtonText }}
         </a>
       </div>
 
       <dl class="mt-14 grid max-w-md grid-cols-3 gap-6 border-t border-border pt-8">
-        <div>
-          <dt class="text-xs uppercase tracking-wide text-fg-subtle">Experience</dt>
-          <dd class="mt-1 font-mono text-2xl font-semibold">{{ experience }}+ yrs</dd>
-        </div>
-        <div>
-          <dt class="text-xs uppercase tracking-wide text-fg-subtle">Feature modules shipped</dt>
-          <dd class="mt-1 font-mono text-2xl font-semibold">30+</dd>
-        </div>
-        <div>
-          <dt class="text-xs uppercase tracking-wide text-fg-subtle">Employee of the Month</dt>
-          <dd class="mt-1 font-mono text-2xl font-semibold">×4</dd>
-        </div>
+        @for (stat of content.stats; track stat.label) {
+          <div>
+            <dt class="text-xs uppercase tracking-wide text-fg-subtle">{{ stat.label }}</dt>
+            <dd class="mt-1 font-mono text-2xl font-semibold">{{ stat.value }}{{ stat.suffix }}</dd>
+          </div>
+        }
       </dl>
     </div>
 

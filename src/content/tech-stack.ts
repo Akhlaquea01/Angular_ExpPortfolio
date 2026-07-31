@@ -20,7 +20,7 @@ export const techStack: TechStackItem[] = [
   { name: 'Redis', icon: '/images/logo/redis.svg', category: 'Backend & Data' },
   { name: 'Swagger', icon: '/images/logo/swagger.svg', category: 'Backend & Data' },
   { name: 'PostgreSQL', icon: '/images/logo/postgresql.svg', category: 'Backend & Data' },
-  { name: 'Spring Boot', icon: '/images/logo/spring-boot.svg', category: 'Backend & Data' },
+  // { name: 'Spring Boot', icon: '/images/logo/spring-boot.svg', category: 'Backend & Data' },
 
   // DevOps & Cloud
   { name: 'Docker', icon: '/images/logo/docker.webp', category: 'DevOps & Cloud' },
