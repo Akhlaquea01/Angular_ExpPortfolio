@@ -10,15 +10,12 @@ import { AnimatedBackground } from '../../shared/ui/animated-background';
 import { Btn } from '../../shared/ui/button/btn';
 
 function computeExperience(startIso: string): string {
-  const start = new Date(startIso);
-  const now = new Date();
-  let years = now.getFullYear() - start.getFullYear();
-  let months = now.getMonth() - start.getMonth();
-  if (months < 0) {
-    years--;
-    months += 12;
-  }
-  return `${years}.${months}`;
+  const startDate = new Date(startIso);
+  const currentDate = new Date();
+  const diffInMonths =
+    (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
+    (currentDate.getMonth() - startDate.getMonth());
+  return (Math.floor(diffInMonths / 6) * 0.5).toFixed(1).replace('.0', '');
 }
 
 @Component({
