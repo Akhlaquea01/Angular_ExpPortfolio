@@ -1,0 +1,614 @@
+{
+    "profile": {
+        "name": "Akhlaque Ahmad",
+        "firstName": "Akhlaque",
+        "role": "AI Full Stack Engineer",
+        "tagline": "Angular & Node.js Architecture · AI/Agentic Systems",
+        "location": "Bengaluru, India",
+        "email": "akhlaquea01@gmail.com",
+        "phone": "+91-8797247279",
+        "github": "https://github.com/Akhlaquea01",
+        "linkedin": "https://www.linkedin.com/in/iam-atts/",
+        "photo": "/images/akhlaque-01.jpg",
+        "experienceStartDate": "2021-02-14",
+        "summary": "Lead Engineer with 5.5+ years of experience developing enterprise B2B SaaS applications using Angular, TypeScript, JavaScript, Node.js, Express.js, MongoDB, and REST APIs. Specialized in scalable frontend architecture, reusable component development, Node.js BFF services, and AI-enabled enterprise applications. Hands-on experience integrating LiteLLM/OpenAI models, Server-Sent Events (SSE), MCP, and Web Components to build intelligent sourcing solutions. Experienced in performance optimization, production support, code reviews, feature ownership, and delivering high-quality software in Agile environments.",
+        "hobby": "When I'm not coding, I'm usually diving into the latest tech trends—podcasts, GitHub, documentation rabbit holes. I'm a casual gamer (mobile games mostly), love hanging out with friends, and I travel whenever I can to soak up new cultures and perspectives. I think the best engineers are curious about the world, not just the code."
+    },
+    "experience": [
+        {
+            "company": "Zycus",
+            "logo": "/images/logo/zycus.png",
+            "active": true,
+            "roles": [
+                {
+                    "title": "Lead Engineer",
+                    "employmentType": "Full-time",
+                    "tenure": "Apr 2026 - Present",
+                    "duration": "4 mos",
+                    "location": "Bengaluru, Karnataka, India · Hybrid",
+                    "responsibilities": [
+                        "Led development and architectural decisions for ably and Agentic Systems.",
+                        "Spearheaded the integration of AI-driven workflows and agent-based solutions.",
+                        "Mentored team members and enforced clean code and performance optimization practices.",
+                        "Collaborated with stakeholders to define requirements for intelligent enterprise software."
+                    ],
+                    "accomplishments": [
+                        "Successfully launched new agentic capabilities and streamlined development processes."
+                    ],
+                    "skills": [
+                        "Team Leadership",
+                        "Agentic Workflows",
+                        "MCP (Model Context Protocol)",
+                        "Ably Realtime"
+                    ]
+                },
+                {
+                    "title": "Senior Software Engineer",
+                    "employmentType": "Full-time",
+                    "tenure": "Apr 2024 - Mar 2026",
+                    "duration": "2 yrs",
+                    "location": "Bengaluru, Karnataka, India · Hybrid",
+                    "responsibilities": [
+                        "Develop and maintain source-to-pay procurement software, ensuring efficiency and scalability.",
+                        "Created functionality and user experience for multiple Merlin Agentic Platforms.",
+                        "Optimize UI performance by upgrading packages and resolving memory leaks.",
+                        "Implement AWS services like S3 for file management and SQS for messaging.",
+                        "Increase code coverage and refactor legacy code for better maintainability.",
+                        "Conduct code reviews and integrate SonarQube analysis for quality improvements."
+                    ],
+                    "accomplishments": [
+                        "Received Monthly Goody in November 2024 for dedication and efforts.",
+                        "Completed SQL Bootcamp on Udemy.",
+                        "Successfully completed FY24-25 Master Course - GDUS Delivery - Salesforce Training (Internal)."
+                    ],
+                    "skills": [
+                        "Angular & DewDrops",
+                        "Node.js & Express BFF",
+                        "Streaming AI Chat",
+                        "Playwright E2E",
+                        "AWS S3 & SQS",
+                        "Performance Optimization"
+                    ]
+                },
+                {
+                    "title": "Software Engineer",
+                    "employmentType": "Full-time",
+                    "tenure": "May 2022 - Jul 2024",
+                    "duration": "2 yrs 3 mos",
+                    "location": "Bengaluru, Karnataka, India · Hybrid",
+                    "responsibilities": [
+                        "Developed and maintained procurement software using Angular and Bootstrap.",
+                        "Integrated RESTful APIs using Swagger for seamless data exchange.",
+                        "Implemented CI/CD pipelines with GoCD for automated deployments.",
+                        "Ensured adherence to best practices in web development and optimized UI components."
+                    ],
+                    "accomplishments": [
+                        "Received Individual Goody in April 2023 for consistently demonstrating a can-do attitude, resourcefulness, and delivering high-quality work within project timelines.",
+                        "Completed Clean Code Course on Udemy."
+                    ],
+                    "skills": [
+                        "Angular",
+                        "Bootstrap",
+                        "REST APIs",
+                        "Swagger",
+                        "GoCD",
+                        "CI/CD"
+                    ]
+                },
+                {
+                    "title": "Associate Software Engineer",
+                    "employmentType": "Full-time",
+                    "tenure": "Jul 2021 - Apr 2022",
+                    "duration": "10 mos",
+                    "location": "Bangalore Urban, Karnataka, India · Hybrid",
+                    "responsibilities": [
+                        "Played a key role in migrating supplier-side legacy pages to the Dew Drops architecture.",
+                        "Collaborated with cross-functional teams using Git and Jira for efficient project management.",
+                        "Conducted code reviews and implemented improvements based on SonarQube analysis."
+                    ],
+                    "accomplishments": [
+                        "Received recognition for quick learning and extra effort in ensuring timely project completion.",
+                        "Participated in Zycus' two-day Hackerfest, showcasing problem-solving skills and teamwork."
+                    ],
+                    "skills": [
+                        "Angular",
+                        "Git",
+                        "Jira",
+                        "SonarQube",
+                        "Code Review"
+                    ]
+                },
+                {
+                    "title": "Software Engineering Trainee",
+                    "employmentType": "Full-time",
+                    "tenure": "Feb 2021 - Jun 2021",
+                    "duration": "5 mos",
+                    "location": "Bangalore Urban, Karnataka, India · Remote",
+                    "responsibilities": [
+                        "Assisted in developing and maintaining web applications.",
+                        "Participated in code reviews and implemented suggested improvements.",
+                        "Actively learned and applied new technologies relevant to the project."
+                    ],
+                    "accomplishments": [
+                        "Successfully contributed to key features of the application.",
+                        "Completed Angular Developer Certification | Edureka."
+                    ],
+                    "skills": [
+                        "Angular",
+                        "Code Review"
+                    ]
+                }
+            ]
+        }
+    ],
+    "skillGroups": [
+        {
+            "category": "AI & Enterprise Integration",
+            "items": [
+                {
+                    "name": "LiteLLM"
+                },
+                {
+                    "name": "OpenAI",
+                    "icon": "/images/logo/openai.webp"
+                },
+                {
+                    "name": "MCP (Model Context Protocol)",
+                    "icon": "/images/logo/mcp.png"
+                },
+                {
+                    "name": "Ollama",
+                    "icon": "/images/logo/ollama.png"
+                },
+                {
+                    "name": "Open Router",
+                    "icon": "/images/logo/openrouter.png"
+                },
+                {
+                    "name": "Server-Sent Events (SSE)"
+                },
+                {
+                    "name": "AI Chat Integration"
+                },
+                {
+                    "name": "Agentic Workflows"
+                },
+                {
+                    "name": "AI Workflow Visualization"
+                },
+                {
+                    "name": "Data Ingestion Pipelines"
+                }
+            ]
+        },
+        {
+            "category": "Programming Languages",
+            "items": [
+                {
+                    "name": "TypeScript",
+                    "icon": "/images/logo/typescript.svg"
+                },
+                {
+                    "name": "JavaScript (ES6+)",
+                    "icon": "/images/logo/javascript.svg"
+                },
+                {
+                    "name": "HTML5",
+                    "icon": "/images/logo/html.svg"
+                },
+                {
+                    "name": "CSS3",
+                    "icon": "/images/logo/css.svg"
+                },
+                {
+                    "name": "SCSS",
+                    "icon": "/images/logo/sass.svg"
+                },
+                {
+                    "name": "SQL"
+                }
+            ]
+        },
+        {
+            "category": "Backend",
+            "items": [
+                {
+                    "name": "Node.js",
+                    "icon": "/images/logo/nodejs.svg"
+                },
+                {
+                    "name": "Express.js",
+                    "icon": "/images/logo/express.svg"
+                },
+                {
+                    "name": "Swagger/OpenAPI",
+                    "icon": "/images/logo/swagger.svg"
+                },
+                {
+                    "name": "MongoDB CRUD Operations",
+                    "icon": "/images/logo/mongodb.svg"
+                },
+                {
+                    "name": "REST APIs"
+                },
+                {
+                    "name": "Backend-for-Frontend (BFF)"
+                },
+                {
+                    "name": "Joi Validation"
+                },
+                {
+                    "name": "Event-Driven Architecture"
+                }
+            ]
+        },
+        {
+            "category": "Frontend",
+            "items": [
+                {
+                    "name": "Angular (11–22)",
+                    "icon": "/images/logo/angular.svg"
+                },
+                {
+                    "name": "React (Basics)",
+                    "icon": "/images/logo/react.svg"
+                },
+                {
+                    "name": "Bootstrap",
+                    "icon": "/images/logo/bootstrap.svg"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "icon": "/images/logo/tailwind-css.svg"
+                },
+                {
+                    "name": "RxJS",
+                    "icon": "/images/logo/reactivex.svg"
+                },
+                {
+                    "name": "Web Components",
+                    "icon": "/images/logo/webcomponentsdotorg.svg"
+                },
+                {
+                    "name": "Custom NPM Packages",
+                    "icon": "/images/logo/npm.svg"
+                },
+                {
+                    "name": "Ably Pub/Sub",
+                    "icon": "/images/logo/ably.svg"
+                },
+                {
+                    "name": "Highcharts",
+                    "icon": "/images/logo/highcharts.svg"
+                },
+                {
+                    "name": "Angular Signals"
+                },
+                {
+                    "name": "Standalone Components"
+                },
+                {
+                    "name": "Angular Material"
+                },
+                {
+                    "name": "Angular CDK"
+                },
+                {
+                    "name": "React Web Component Integration"
+                },
+                {
+                    "name": "Micro Frontends"
+                },
+                {
+                    "name": "GoJS"
+                }
+            ]
+        },
+        {
+            "category": "Databases",
+            "items": [
+                {
+                    "name": "MongoDB",
+                    "icon": "/images/logo/mongodb.svg"
+                },
+                {
+                    "name": "MySQL",
+                    "icon": "/images/logo/my-sql.svg"
+                },
+                {
+                    "name": "PostgreSQL (Basic)",
+                    "icon": "/images/logo/postgresql.svg"
+                },
+                {
+                    "name": "Redis",
+                    "icon": "/images/logo/redis.svg"
+                }
+            ]
+        },
+        {
+            "category": "Tools & Platforms",
+            "items": [
+                {
+                    "name": "Git",
+                    "icon": "/images/logo/git.svg"
+                },
+                {
+                    "name": "GitLab",
+                    "icon": "/images/logo/gitlab.svg"
+                },
+                {
+                    "name": "Bitbucket",
+                    "icon": "/images/logo/bitbucket.svg"
+                },
+                {
+                    "name": "Jenkins",
+                    "icon": "/images/logo/jenkins.svg"
+                },
+                {
+                    "name": "GoCD",
+                    "icon": "/images/logo/gocd.svg"
+                },
+                {
+                    "name": "Argo CD",
+                    "icon": "/images/logo/Argo.webp"
+                },
+                {
+                    "name": "Docker",
+                    "icon": "/images/logo/docker.webp"
+                },
+                {
+                    "name": "Kubernetes",
+                    "icon": "/images/logo/kubernetes.png"
+                },
+                {
+                    "name": "Rancher",
+                    "icon": "/images/logo/rancher.svg"
+                },
+                {
+                    "name": "AWS",
+                    "icon": "/images/logo/aws-color.png"
+                },
+                {
+                    "name": "SonarQube",
+                    "icon": "/images/logo/sonarqube.svg"
+                },
+                {
+                    "name": "Consul",
+                    "icon": "/images/logo/consul.svg"
+                },
+                {
+                    "name": "HashiCorp Vault",
+                    "icon": "/images/logo/hashicorp-vault.svg"
+                }
+            ]
+        },
+        {
+            "category": "Monitoring & Debugging",
+            "items": [
+                {
+                    "name": "Datadog",
+                    "icon": "/images/logo/datadog.svg"
+                },
+                {
+                    "name": "Dynatrace",
+                    "icon": "/images/logo/dynatrace.svg"
+                },
+                {
+                    "name": "Elastic APM",
+                    "icon": "/images/logo/elastic.svg"
+                },
+                {
+                    "name": "Rookout",
+                    "icon": "/images/logo/rookout.svg"
+                },
+                {
+                    "name": "Backstage",
+                    "icon": "/images/logo/backstage.svg"
+                },
+                {
+                    "name": "JIRA",
+                    "icon": "/images/logo/jira.svg"
+                },
+                {
+                    "name": "Postman",
+                    "icon": "/images/logo/postman.svg"
+                },
+                {
+                    "name": "VS Code",
+                    "icon": "/images/logo/vs-code.png"
+                }
+            ]
+        },
+        {
+            "category": "Performance & Quality",
+            "items": [
+                {
+                    "name": "Jest",
+                    "icon": "/images/logo/jest.svg"
+                },
+                {
+                    "name": "Lazy Loading"
+                },
+                {
+                    "name": "Angular Signals"
+                },
+                {
+                    "name": "OnPush Change Detection"
+                },
+                {
+                    "name": "Virtual Scrolling"
+                },
+                {
+                    "name": "TrackBy"
+                },
+                {
+                    "name": "Code Splitting"
+                },
+                {
+                    "name": "Bundle Optimization"
+                },
+                {
+                    "name": "Accessibility (WCAG)"
+                },
+                {
+                    "name": "Karma",
+                    "icon": "/images/logo/karma.svg"
+                }
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "iSource (Enterprise Sourcing Platform)",
+            "description": "A high-scale sourcing platform with a lazy-loaded architecture, built using Angular DewDrops UI and a Node/Express BFF that aggregates multi-product APIs.",
+            "highlights": [
+                "Built and maintained iSource DewDrops UI for events, QuickSource, approvals, admin, and BOQ workflows.",
+                "Developed a Node.js BFF aggregating multi-product APIs (isource, ana-negotiation, ilogix, eproc) with Consul.",
+                "Integrated Ably realtime, STOMP messaging, Highcharts analytics, and complex drag-and-drop sourcing UX.",
+                "Delivered autonomous chat modules inside iSource (buyer/CP chat) collaborating across UI, BFF, and Java backends."
+            ],
+            "tech": [
+                "Angular",
+                "DewDrops",
+                "Node BFF",
+                "Ably",
+                "Highcharts",
+                "STOMP"
+            ]
+        },
+        {
+            "name": "Merlin Assist & Merlin Agentic Platform (MAP)",
+            "description": "An AI-powered assist chat PWA embedded across the enterprise, powered by a Spring Boot backend orchestrating multi-model LLMs and agentic workflows.",
+            "highlights": [
+                "Built Merlin Assist chat PWA (React/Vite/MUI) featuring adaptive cards, OCR, and Microsoft Teams/Slack integrations.",
+                "Embedded the React chat as a UMD bundle into Angular/DewDrops hosts ensuring Zone.js compatibility.",
+                "Implemented shared common-chat Angular UI + BFF with AI streaming and MCP tools auto-derived from BFF routes."
+            ],
+            "tech": [
+                "React 18",
+                "Angular",
+                "AI",
+                "MCP",
+                "Ably",
+                "MongoDB",
+                "Teams/Slack"
+            ]
+        },
+        {
+            "name": "Autonomous Negotiation (AI-Assisted Sourcing)",
+            "description": "An autonomous negotiation module and product-pluggable chat shell spanning a buyer chat interface and supplier portal, powered by real-time messaging, streaming AI capabilities, and MCP tools.",
+            "highlights": [
+                "Built DewDrops Angular UI for autonomous negotiation and a product-pluggable common-chat shell utilized across registries.",
+                "Designed Node/Express BFF handling AI negotiation, supplier responses, AI streaming, and chat-stream delegation.",
+                "Integrated Ably realtime pub/sub for live chat and exposed BFF routes as MCP tools for seamless AI agent integrations.",
+                "Wired streaming AI chat with Markdown and PDF rendering, establishing shared patterns across MAP-assisted flows."
+            ],
+            "tech": [
+                "Angular",
+                "DewDrops",
+                "Node/Express BFF",
+                "Ably",
+                "Streaming AI",
+                "MCP",
+                "Markdown",
+                "PDF"
+            ]
+        },
+        {
+            "name": "BOM / BOQ (Bill of Materials & Pricing)",
+            "description": "An advanced micro-application for building and pricing Bills of Materials, featuring formula builders and robust queued import/export pipelines.",
+            "highlights": [
+                "Built BOM AppX UI featuring a BOM builder, alternate-supplier views, and a complex mathjs-driven formula builder.",
+                "Implemented BOM BFF for pricing tables, buyer/supplier responses, and iContract BOM variants.",
+                "Delivered BOQ import/export BFF utilizing Excel/CSV pipelines, Redis/BullMQ job queues, and AWS SDK integrations.",
+                "Built the BOQ pricing table micro-app (UI + BFF) enabling view-response pricing grids in sourcing events."
+            ],
+            "tech": [
+                "Angular",
+                "Express BFF",
+                "ExcelJS",
+                "mathjs",
+                "Redis",
+                "BullMQ",
+                "AWS SDK",
+                "Agenda"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "title": "Bachelor of Technology (CSE)",
+            "institution": "Vishveshwarya Group of Institutions, Ghaziabad, UP, India",
+            "date": "2016 – 2020",
+            "content": "Completed Bachelor of Technology in Computer Science and Engineering, affiliated with AKTU."
+        },
+        {
+            "title": "Intermediate (Mathematics)",
+            "institution": "K.R. Bose Smarak College, Muzaffarpur, Bihar, India",
+            "date": "2016",
+            "content": "Completed Intermediate (Mathematics)."
+        },
+        {
+            "title": "Matriculation",
+            "institution": "Sacred Heart School, Malighat, Muzaffarpur, Bihar",
+            "date": "May 2014",
+            "content": "Completed Matriculation from Sacred Heart School."
+        }
+    ],
+    "certifications": [
+        {
+            "name": "AI-First Software Engineering Program",
+            "issuer": "Airtribe",
+            "status": "Ongoing"
+        },
+        {
+            "name": "Angular Developer Certification",
+            "issuer": "Edureka",
+            "status": "Completed"
+        }
+    ],
+    "achievementStats": [
+        {
+            "label": "Years of experience",
+            "value": 5.5,
+            "suffix": "+",
+            "description": "Building enterprise SaaS products"
+        },
+        {
+            "label": "Manual effort reduced",
+            "value": 50,
+            "suffix": "%",
+            "description": "Through sourcing workflow automation"
+        },
+        {
+            "label": "Performance boost",
+            "value": 40,
+            "suffix": "%",
+            "description": "From frontend modernization initiatives"
+        },
+        {
+            "label": "Integration effort cut",
+            "value": 30,
+            "suffix": "%",
+            "description": "Via reusable BFF aggregation layers"
+        }
+    ],
+    "achievements": [
+        {
+            "title": "Employee of the Month ×4",
+            "description": "Apr 2022, Apr 2023, Nov 2024, and Apr 2025 — recognized for technical leadership and consistent delivery excellence."
+        },
+        {
+            "title": "Reduced manual sourcing effort by 50%",
+            "description": "Through advanced workflow automation and optimization across the procurement platform."
+        },
+        {
+            "title": "Increased application performance by 40%",
+            "description": "By spearheading frontend modernization initiatives, including Angular Signals and Standalone Components."
+        },
+        {
+            "title": "Standardized enterprise integration across 5+ microservices",
+            "description": "Designed reusable BFF aggregation layers and API contracts, cutting frontend integration effort by 30%."
+        }
+    ]
+}

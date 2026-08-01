@@ -4,7 +4,7 @@ export const skillGroups: SkillGroup[] = [
   {
     category: 'AI & Enterprise Integration',
     items: [
-      { name: 'LiteLLM' },
+      { name: 'LiteLLM', icon: '/images/logo/litellm.png' },
       { name: 'OpenAI', icon: '/images/logo/openai.webp' },
       { name: 'MCP (Model Context Protocol)', icon: '/images/logo/mcp.png' },
       { name: 'Ollama', icon: '/images/logo/ollama.png' },
@@ -24,7 +24,7 @@ export const skillGroups: SkillGroup[] = [
       { name: 'HTML5', icon: '/images/logo/html.svg' },
       { name: 'CSS3', icon: '/images/logo/css.svg' },
       { name: 'SCSS', icon: '/images/logo/sass.svg' },
-      { name: 'SQL' },
+      { name: 'SQL', icon: '/images/logo/sql.svg' },
     ],
   },
   {
@@ -36,7 +36,7 @@ export const skillGroups: SkillGroup[] = [
       { name: 'MongoDB CRUD Operations', icon: '/images/logo/mongodb.svg' },
       { name: 'REST APIs' },
       { name: 'Backend-for-Frontend (BFF)' },
-      { name: 'Joi Validation' },
+      { name: 'Joi Validation', icon: '/images/logo/joi.png' },
       { name: 'Event-Driven Architecture' },
     ],
   },

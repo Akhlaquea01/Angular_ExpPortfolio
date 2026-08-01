@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs"
+    "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs",
+    "generate:resume": "tsx scripts/resume/generate-resume.mts"
   },
   "private": true,
   "packageManager": "npm@12.0.1",
@@ -43,9 +44,12 @@
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
     "jsdom": "^28.0.0",
+    "pdf-lib": "^1.17.1",
+    "playwright-chromium": "^1.62.1",
     "postcss": "^8.5.3",
     "prettier": "^3.8.1",
     "tailwindcss": "^4.1.12",
+    "tsx": "^4.23.1",
     "typescript": "~6.0.2",
     "vitest": "^4.0.8"
   }
